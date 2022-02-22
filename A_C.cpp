@@ -9,7 +9,17 @@ int main()
     {
         int a, b, n;
         cin>>a>>b>>n;
+        int ctr=0;
 
-        
+        while(a<=n&&b<=n)
+        {
+            if(a<b)
+              a+=b;
+            else
+              b+=a;
+            ctr++;    
+        }
+
+        cout<<ctr<<"\n";
     }
 }
